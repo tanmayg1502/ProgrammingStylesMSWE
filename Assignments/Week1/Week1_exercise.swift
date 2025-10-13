@@ -7,7 +7,7 @@ guard CommandLine.arguments.count > 1 else {
 }
 
 let inputFilePath = CommandLine.arguments[1]
-let stopWordsPath = "stop_words.txt"
+let stopWordsPath = "../stop_words.txt"
 
 // Read stop words
 guard let stopWordsContent = try? String(contentsOfFile: stopWordsPath, encoding: .utf8) else {
